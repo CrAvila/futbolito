@@ -101,6 +101,7 @@ a {
     
 }
 
+
 .panel1{ background-image: url(images/1.jpg) }
 .ciclo1{background-image: url(images/primer.jpg)}
 .panel2{ background-image: url(images/2.jpg) }
@@ -158,3 +159,10 @@ a {
             flex: 5;
 }
 
+.panel.openAlumnos {
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+}
