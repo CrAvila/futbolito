@@ -36,9 +36,9 @@ const updateRound = () => {
     round.textContent = `Turno ${counter}`
 };
 
-var preguntas1ab = ["¿Cuál es el número con tres unidades y dos decenas?","Resuelve el siguiente problema: Raquel compró 43 colas y su amiga 56 colas más. ¿Cuántas colas compraron entre las dos?","Realice el siguiente problema: Roberto compró 49 sorbetes y sus hermanos se comieron 23 sorbetes. ¿cuántos sorbetes le quedaron a Roberto?","Cubo de Rubik"," ¿Cuál es la figura geométrica que tiene 4 lados rectos y de igual tamaño?","Piense y escribe el número que es mayor que 50 y menor que 60 y en las unidades lleva 5.","TORRE DE HANOI"]
+var preguntas1ab = [" ¿Cuánto es la mitad de dos, más tres?","¿Escribe el número que completa la serie?  17–34–51–68 - ?","Resuelve: En la panadería de Claudia se han preparado 73 empanadas y desean colocarlas en 4 cajas con el mismo contenido en cada una. ¿Cuántas empanadas deberán colocar en cada caja?","Cubo de Rubik","Calcule el resultado: 8 + 8 * 5","Resuelva el siguiente problema. José sembró 57 rosas y Sonia sembró el triple. ¿Cuántas rosas sembró Sonia?","TORRE DE HANOI"]
 
-var respuesta1ab = ["23","Entre los dos compraron 99 colas","Le quedaron 26 sorbetes","","Cuadrado","55"];
+var respuesta1ab = ["4","85","18 y sobra 1","","48","171 rosas",""];
 
 num = 0;
 
@@ -129,37 +129,25 @@ function partido(){
 
 function answer(){
     if(question.textContent == 0){
-      ans.textContent = respuesta1ab[0];
-      ans.style.fontSize="50px";    
-    }
-      else if(question.textContent == 1){
-          ans.textContent = respuesta1ab[1];
-          ans.style.fontSize="35px";
+        ans.textContent = respuesta1ab[0];    }
+        else if(question.textContent == 1){
+            ans.textContent = respuesta1ab[1];
+        }
+        else if(question.textContent == 2){
+            ans.textContent = respuesta1ab[2];
+        }
+        else if(question.textContent == 3){
+          ans.textContent = respuesta1ab[3];
       }
-      else if(question.textContent == 2){
-          ans.textContent = respuesta1ab[2];
-          ans.style.fontSize="35px";
+      else if(question.textContent == 4){
+          ans.textContent = respuesta1ab[4];
       }
-      else if(question.textContent == 3){
-        ans.textContent = respuesta1ab[3];
-      ans.style.fontSize="50px";    
-
-    }
-    else if(question.textContent == 4){
-        ans.textContent = respuesta1ab[4];
-      ans.style.fontSize="50px";    
-
-    }
-    else if(question.textContent == 5){
-        ans.textContent = respuesta1ab[5];
-      ans.style.fontSize="50px";    
-
-    }
-    else if(question.textContent == 6){
-        ans.textContent = respuesta1ab[6];
-      ans.style.fontSize="50px";    
-
-    }
+      else if(question.textContent == 5){
+          ans.textContent = respuesta1ab[5];
+      }
+      else if(question.textContent == 6){
+          ans.textContent = respuesta1ab[6];
+      }
 }
 
 

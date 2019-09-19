@@ -36,9 +36,9 @@ const updateRound = () => {
     round.textContent = `Turno ${counter}`
 };
 
-var preguntas1ab = ["¿Cuál es el número con tres unidades y dos decenas?","Resuelve el siguiente problema: Raquel compró 43 colas y su amiga 56 colas más. ¿Cuántas colas compraron entre las dos?","Realice el siguiente problema: Roberto compró 49 sorbetes y sus hermanos se comieron 23 sorbetes. ¿cuántos sorbetes le quedaron a Roberto?","Cubo de Rubik"," ¿Cuál es la figura geométrica que tiene 4 lados rectos y de igual tamaño?","Piense y escribe el número que es mayor que 50 y menor que 60 y en las unidades lleva 5.","TORRE DE HANOI"]
+var preguntas1ab = ["¿Cuánto es la mitad de dos, más tres?","Resuelve el siguiente problema: Todas las flores que hay en 3 macetas tienen 5 pétalos. Si en cada maceta hay 3 flores. Cuántas flores hay en total? Cuántos pétalos hay en todas las macetas?","Realice el siguiente problema: Sefora tiene 170 ganchos  y Pilar 50 ganchos. ¿cuántos ganchos más tiene Sefora que Pilar?","Cubo de Rubik","En la granja de Pilar hay un corral que tiene 4 vértices y sus lados iguales. Qué forma tiene el corral?","Piense y escribe el número que dividido entre 3 da como resultado 33?","TORRE DE HANOI"]
 
-var respuesta1ab = ["23","Entre los dos compraron 99 colas","Le quedaron 26 sorbetes","","Cuadrado","55"];
+var respuesta1ab = ["4","Hay 9 flores y 45 pétalos.","Sefora tiene 120 ganchos más.","","Cuadrado","99",""];
 
 num = 0;
 
@@ -129,36 +129,24 @@ function partido(){
 
 function answer(){
     if(question.textContent == 0){
-      ans.textContent = respuesta1ab[0];
-      ans.style.fontSize="50px";    
-    }
+      ans.textContent = respuesta1ab[0];    }
       else if(question.textContent == 1){
           ans.textContent = respuesta1ab[1];
-          ans.style.fontSize="35px";
       }
       else if(question.textContent == 2){
           ans.textContent = respuesta1ab[2];
-          ans.style.fontSize="35px";
       }
       else if(question.textContent == 3){
         ans.textContent = respuesta1ab[3];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 4){
         ans.textContent = respuesta1ab[4];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 5){
         ans.textContent = respuesta1ab[5];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 6){
         ans.textContent = respuesta1ab[6];
-      ans.style.fontSize="50px";    
-
     }
 }
 

@@ -36,9 +36,13 @@ const updateRound = () => {
     round.textContent = `Turno ${counter}`
 };
 
-var preguntas1ab = ["¿Cuál es el número con tres unidades y dos decenas?","Resuelve el siguiente problema: Raquel compró 43 colas y su amiga 56 colas más. ¿Cuántas colas compraron entre las dos?","Realice el siguiente problema: Roberto compró 49 sorbetes y sus hermanos se comieron 23 sorbetes. ¿cuántos sorbetes le quedaron a Roberto?","Cubo de Rubik"," ¿Cuál es la figura geométrica que tiene 4 lados rectos y de igual tamaño?","Piense y escribe el número que es mayor que 50 y menor que 60 y en las unidades lleva 5.","TORRE DE HANOI"]
 
-var respuesta1ab = ["23","Entre los dos compraron 99 colas","Le quedaron 26 sorbetes","","Cuadrado","55"];
+var preguntas1ab = ["¿Cuánto es la mitad de dos, más tres?","Realiza el siguiente problema:La piscina de la casa de María tiene forma de un trapecio, si sus bases son de 4m y 2m, con una altura de 2.5 m.  ¿Cuánto mide el área de la piscina? ","Resuelve  el siguiente problema: Levi desea decorar su casa y debe escoger dos colores de cortinas entre los  cinco colores que se presentan a continuación:¿De cuantas formas diferentes pueden combinar los colores de las cortinas? ","Cubo de Rubik","Durante el desayuno, Wilfredo bebe un cuarto litro de jugo de piña y su hermana Lis, tres octavos de litro de jugo de piña. ¿Cuál es la cantidad de jugo de piña que consumen entre los dos hermanos?","Si ocho manzanas pesan 197.6  gramos ¿cuánto pesa cada manzana, tomando en cuenta que todas pesan lo mismo?","TORRE DE HANOI"]
+
+/*var preguntas1ab = ["","","","Cubo de Rubik","","","TORRE DE HANOI"]*/
+
+
+var respuesta1ab = ["4","A= 7.5 ㎡","De 10 formas","","Cinco octavos de jugo de piña","24.7 gramos cada manzana",""];
 
 num = 0;
 
@@ -81,11 +85,14 @@ function partido(){
         ejem.src ="images/ut.png";
         ejem.style.display = "none";
         mostrar.style.display = "block";
+        ejem.style.display = "none";
     }
     else if (question.textContent == 2){
         texto.textContent = preguntas1ab[2];
-        ejem.src ="images/ut.png";
-        ejem.style.display = "none";
+        
+        ejem.src ="images/colores.png";
+        mostrar.style.display = "block";        
+        ejem.style.display = "block";
         mostrar.style.display = "block";
         
     }
@@ -124,41 +131,28 @@ function partido(){
         ejem.style.marginLeft = "140px";
         mostrar.style.display = "none";
     }
-    
 }
 
 function answer(){
     if(question.textContent == 0){
-      ans.textContent = respuesta1ab[0];
-      ans.style.fontSize="50px";    
-    }
+      ans.textContent = respuesta1ab[0];    }
       else if(question.textContent == 1){
           ans.textContent = respuesta1ab[1];
-          ans.style.fontSize="35px";
       }
       else if(question.textContent == 2){
           ans.textContent = respuesta1ab[2];
-          ans.style.fontSize="35px";
       }
       else if(question.textContent == 3){
         ans.textContent = respuesta1ab[3];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 4){
         ans.textContent = respuesta1ab[4];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 5){
         ans.textContent = respuesta1ab[5];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 6){
         ans.textContent = respuesta1ab[6];
-      ans.style.fontSize="50px";    
-
     }
 }
 

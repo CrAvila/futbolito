@@ -36,9 +36,12 @@ const updateRound = () => {
     round.textContent = `Turno ${counter}`
 };
 
-var preguntas1ab = ["¿Cuál es el número con tres unidades y dos decenas?","Resuelve el siguiente problema: Raquel compró 43 colas y su amiga 56 colas más. ¿Cuántas colas compraron entre las dos?","Realice el siguiente problema: Roberto compró 49 sorbetes y sus hermanos se comieron 23 sorbetes. ¿cuántos sorbetes le quedaron a Roberto?","Cubo de Rubik"," ¿Cuál es la figura geométrica que tiene 4 lados rectos y de igual tamaño?","Piense y escribe el número que es mayor que 50 y menor que 60 y en las unidades lleva 5.","TORRE DE HANOI"]
+var preguntas1ab = ["¿Cuánto es la mitad de dos, más tres?","Josué y Ester deciden viajar a la casa de su abuela por caminos diferentes. Josué hace 8 845 km y Ester hace 8 111 km. ¿Cuál es la diferencia de km entre lo recorrido por los dos?","Realiza el siguiente problema.Encuentra los números que faltan en el cuadro mágico, sabiendo que la suma de los números en cada fila, columna y diagonales es 60.","Cubo de Rubik","La piscina de Pablo es un rectángulo. Esta dividida en en dos áreas por un muro interno diagonal, una área es para niños y otra para adultos. ¿Calcula área de la piscina para niños?"," El jueves, Doris pinto  3/5   de un mural, el día viernes 1/6 del mismo mural.   ¿Qué fracción del mural pinto durante los dos días?","TORRE DE HANOI"]
 
-var respuesta1ab = ["23","Entre los dos compraron 99 colas","Le quedaron 26 sorbetes","","Cuadrado","55"];
+/*var preguntas1ab = ["","","","Cubo de Rubik","","","TORRE DE HANOI"]*/
+
+
+var respuesta1ab = ["4","734 km","16, 20 y 24","","546 ㎡","23/30",""];
 
 num = 0;
 
@@ -84,8 +87,8 @@ function partido(){
     }
     else if (question.textContent == 2){
         texto.textContent = preguntas1ab[2];
-        ejem.src ="images/ut.png";
-        ejem.style.display = "none";
+        ejem.src ="images/cuadromagico.jpg";
+        ejem.style.display = "block";
         mostrar.style.display = "block";
         
     }
@@ -97,10 +100,11 @@ function partido(){
         mostrar.style.display = "none";
         
     }
+    
     else if (question.textContent == 4){
         texto.textContent = preguntas1ab[4];
-        ejem.src ="images/ut.png";
-        ejem.style.display = "none";
+        ejem.src ="images/pool.png";
+        ejem.style.display = "block";
         mostrar.style.display = "block";
 
     }
@@ -124,41 +128,29 @@ function partido(){
         ejem.style.marginLeft = "140px";
         mostrar.style.display = "none";
     }
-    
+
 }
 
 function answer(){
     if(question.textContent == 0){
-      ans.textContent = respuesta1ab[0];
-      ans.style.fontSize="50px";    
-    }
+      ans.textContent = respuesta1ab[0];    }
       else if(question.textContent == 1){
           ans.textContent = respuesta1ab[1];
-          ans.style.fontSize="35px";
       }
       else if(question.textContent == 2){
           ans.textContent = respuesta1ab[2];
-          ans.style.fontSize="35px";
       }
       else if(question.textContent == 3){
         ans.textContent = respuesta1ab[3];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 4){
         ans.textContent = respuesta1ab[4];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 5){
         ans.textContent = respuesta1ab[5];
-      ans.style.fontSize="50px";    
-
     }
     else if(question.textContent == 6){
         ans.textContent = respuesta1ab[6];
-      ans.style.fontSize="50px";    
-
     }
 }
 
