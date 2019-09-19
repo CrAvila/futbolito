@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Partido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="partido.css" />
+    
+</head>
+<body>
+    
+    <div class="wrapper">
+
+
+        <header>
+            <p>Primer Grado "A" vs Primer Grado "B" </p>
+        </header>
+
+        <div class="round">
+            Turno 1
+        </div>
+
+        
+
+            <div class="results">
+
+                <div class="resultType">
+                    <p>Equipo 1</p>
+                    <p class="resultNumber" id="userWins">0</p>
+                </div>
+
+
+              
+
+
+                <div class="resultType">
+                    <p>Equipo 2</p>
+                <p class="resultNumber" id="cpuWins">0</p></div>
+            </div>
+            
+            
+            
+
+            <section class="plays">
+
+                    <div class="userPlay">
+                
+                            <img id="ut" src="images/ut.png">
+                            <img id="rock" src="images/rock.png">
+                            <img id="paper" src="images/paper.png">
+                            <img id="scissors" src="images/scissors.png">
+                            
+                            <button id="btnRock" class="choiceButton" data-choice="rock">></button>
+                            <button id="btnPaper" class="choiceButton" data-choice="paper">X</button>
+                            
+                        </div>
+
+                        <div class="textResult">
+                            You won
+                        </div>
+            
+                      
+
+            </section>
+
+            <button id="play">Siguiente</button>
+
+            
+        
+
+
+
+    </div>
+
+
+    <script src="partido.js"></script>
+</body>
+</html>
